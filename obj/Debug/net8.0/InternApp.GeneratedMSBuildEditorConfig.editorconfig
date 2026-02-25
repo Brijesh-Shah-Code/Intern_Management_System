@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InternApp
+build_property.RootNamespace = InternApp
+build_property.ProjectDir = D:\CP_TR110\MVCAPP\InternApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\CP_TR110\MVCAPP\InternApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Intern/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Intern/ViewAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuXFZpZXdBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/MVCIntern/AddIntern.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVZDSW50ZXJuXEFkZEludGVybi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/MVCIntern/DeleteIntern.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVZDSW50ZXJuXERlbGV0ZUludGVybi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/MVCIntern/GetAllInterns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVZDSW50ZXJuXEdldEFsbEludGVybnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/MVCIntern/UpdateInternData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVZDSW50ZXJuXFVwZGF0ZUludGVybkRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CP_TR110/MVCAPP/InternApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zt752q10xd

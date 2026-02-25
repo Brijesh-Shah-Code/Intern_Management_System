@@ -1,0 +1,54 @@
+﻿@model InternApp.Models.t_Intern
+
+@{
+    ViewData["Title"] = "Delete Intern";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-danger shadow">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0"><i class="bi bi-exclamation-triangle"></i> Are you sure?</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        @if (!string.IsNullOrEmpty(Model.ImagePath))
+                        {
+                            <img src="~/intern_images/@Model.ImagePath" alt="Intern Image" class="img-thumbnail shadow-sm"
+                                style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;" />
+                        }
+                        else
+                        {
+                            <div class="bg-light d-inline-flex align-items-center justify-content-center shadow-sm"
+                                style="height: 150px; width: 150px; border-radius: 50%; border: 2px dashed #dee2e6;">
+                                <i class="bi bi-person-fill text-secondary" style="font-size: 4rem;"></i>
+                            </div>
+                        }
+                    </div>
+                    <p class="text-muted">You are about to delete the following intern record:</p>
+                    <ul class="list-group list-group-flush border rounded">
+                        <li class="list-group-item"><strong>Intern ID:</strong> @Model.c_InternId</li>
+                        <li class="list-group-item"><strong>Name:</strong> @Model.c_InternName</li>
+                        <li class="list-group-item"><strong>Gender:</strong> @Model.c_Gender</li>
+                        <li class="list-group-item"><strong>Topic:</strong> @Model.c_TopicName</li>
+                        <li class="list-group-item"><strong>Presentation Date:</strong>
+                            @Model.c_PresentationDate?.ToString("dd-MMM-yyyy")</li>
+                    </ul>
+                </div>
+                <div class="card-footer bg-light d-flex justify-content-between">
+                    <a asp-action="GetAllInterns" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Cancel
+                    </a>
+
+                    <form asp-action="DeleteIntern" method="post">
+                        <input type="hidden" asp-for="c_InternId" />
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-trash"></i> Confirm Delete
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

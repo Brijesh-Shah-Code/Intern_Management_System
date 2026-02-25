@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InternApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\InternApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\0324040b-7c2c-4260-9f17-ae17a16c5de7.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\0324040b-7c2c-4260-9f17-ae17a16c5de7.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\10c43dfd-637f-453b-b635-dbd9308a48e9.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\10c43dfd-637f-453b-b635-dbd9308a48e9.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\1237dcbf-0de0-4bd7-8782-4576b493abf5.png",
+      "PackagePath": "staticwebassets\\intern_images\\1237dcbf-0de0-4bd7-8782-4576b493abf5.png"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\12d12145-3d41-4d6b-a4e1-47cd3e3d92e4.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\12d12145-3d41-4d6b-a4e1-47cd3e3d92e4.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\13030899-ab76-49c3-ad9b-0269f18da3ba_Anniversary.png",
+      "PackagePath": "staticwebassets\\intern_images\\13030899-ab76-49c3-ad9b-0269f18da3ba_Anniversary.png"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\1dd3409b-0ff6-46ba-aa15-6bf213ea289f.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\1dd3409b-0ff6-46ba-aa15-6bf213ea289f.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\22f61c18-317e-4439-bc5d-faf3d846199b.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\22f61c18-317e-4439-bc5d-faf3d846199b.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\2cf0ddb2-6047-48e7-bd93-abdd34eadc27.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\2cf0ddb2-6047-48e7-bd93-abdd34eadc27.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\68c7d3ae-724d-4d12-b585-b78f58d774d6.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\68c7d3ae-724d-4d12-b585-b78f58d774d6.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\7584d1b0-f4ef-415d-a30d-e4f62845e2e7_Anniversary.png",
+      "PackagePath": "staticwebassets\\intern_images\\7584d1b0-f4ef-415d-a30d-e4f62845e2e7_Anniversary.png"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\82bcfac7-7e0c-4e96-9807-d295d3367771.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\82bcfac7-7e0c-4e96-9807-d295d3367771.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\947849bd-9e87-4fb9-ad87-d8442002e12d.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\947849bd-9e87-4fb9-ad87-d8442002e12d.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\97048dec-12c4-42fc-abef-a374ffccea22.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\97048dec-12c4-42fc-abef-a374ffccea22.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\9afea55a-624d-4450-9295-e689e1485b4a.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\9afea55a-624d-4450-9295-e689e1485b4a.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\9e87be03-939f-4451-af96-b78f7dafdc24.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\9e87be03-939f-4451-af96-b78f7dafdc24.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\d073e23f-28b6-49ae-8e7f-703a54cc6572.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\d073e23f-28b6-49ae-8e7f-703a54cc6572.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\d2e5dcf9-24ca-4bb3-ad63-5c80fb906181.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\d2e5dcf9-24ca-4bb3-ad63-5c80fb906181.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\d7c02517-03f3-40f2-ad1c-9a4174f9bb5a.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\d7c02517-03f3-40f2-ad1c-9a4174f9bb5a.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\f0310b6f-fc42-4e47-8c17-9e68a64c12f5.jpg",
+      "PackagePath": "staticwebassets\\intern_images\\f0310b6f-fc42-4e47-8c17-9e68a64c12f5.jpg"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\f86a8615-bfb0-45d1-aa11-679c53480892_logo-2.png",
+      "PackagePath": "staticwebassets\\intern_images\\f86a8615-bfb0-45d1-aa11-679c53480892_logo-2.png"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InternApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.InternApp.props",
+      "PackagePath": "build\\InternApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.InternApp.props",
+      "PackagePath": "buildMultiTargeting\\InternApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.InternApp.props",
+      "PackagePath": "buildTransitive\\InternApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

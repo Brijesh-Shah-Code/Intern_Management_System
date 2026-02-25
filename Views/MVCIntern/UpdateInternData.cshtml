@@ -1,0 +1,31 @@
+﻿@model InternApp.Models.t_Intern
+
+<div class="card shadow mx-auto" style="max-width: 600px;">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">Edit Intern Details</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="EditIntern" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="c_InternId" />
+
+            <input type="hidden" name="ExistingImagePath" value="@Model.ImagePath" />
+
+            <div class="mb-3">
+                <label asp-for="c_InternName" class="form-label fw-bold"></label>
+                <input asp-for="c_InternName" class="form-control" />
+            </div>
+
+            <div class="mb-3 text-center">
+                <label class="d-block fw-bold">Current Image</label>
+                <img src="~/intern_images/@Model.ImagePath" class="img-thumbnail" style="height:100px;" />
+                <p class="small text-muted">Leave empty to keep current image</p>
+                <input type="file" name="imagePath" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <a asp-action="GetAllInterns" class="btn btn-secondary">Back</a>
+                <button type="submit" class="btn btn-success">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,519 @@
+﻿@model IEnumerable<InternApp.Models.t_Intern>
+@{
+    ViewBag.Title = "Index";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+
+
+<button style="background-color: #0992C2; color: whitesmoke;" class="btn fw-bold my-2" data-bs-toggle="modal"
+    data-bs-target="#addInternModal">+ Add New Book</button>
+
+<table class="table table-bordered table-striped mt-4" id="internTable">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Topic Name</th>
+            <th>Date of Presentation</th>
+            <th>Status</th>
+            <th>Topic Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+<div class="modal fade" id="addInternModal" tabindex="-1" role="dialog" aria-labelledby="addInternModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold text-primary" id="addInternModalLabel">Add New Intern</h5>
+                <button type="button" class="close rounded-3 border bg-light" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addInternForm" enctype="multipart/form-data" method="post" asp-action="AddIntern"
+                    asp-controller="Intern">
+                    <div class="form-group mb-3">
+                        <label class="form-label fw-bold">Intern Name</label>
+                        <input type="text" class="form-control" placeholder="Enter full name" name="c_InternName"
+                            id="c_InternName" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label fw-bold d-block">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="c_Gender" value="Male">
+                            <label class="form-check-label" for="m">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="c_Gender" value="Female">
+                            <label class="form-check-label" for="f">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="c_TopicId" class="form-label fw-bold">Topic</label>
+                        <select name="c_TopicId" id="c_TopicId" class="form-select">
+                            <option value="">-- Select Topic --</option>
+                            @foreach (var topic in ViewBag.Topics)
+                            {
+                                <option value="@topic.c_TopicId">
+                                    @topic.c_TopicName
+                                </option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="c_PresentationDate" class="form-label fw-bold">Date of Presentation</label>
+                        <input id="c_PresentationDate" name="c_PresentationDate" type="date" class="form-control" />
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input name="c_IsPresented" type="checkbox" class="form-check-input" id="c_IsPresented">
+                        <label class="form-check-label" for="c_IsPresented">Presentation Status</label>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label class="form-label fw-bold">Upload Topic Image</label>
+                        <input type="file" id="ImagePath" name="ImagePath" class="form-control" accept="image/*" />
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="addInternButton">Add Book</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="editInternModal" tabindex="-1" role="dialog" aria-labelledby="editInternModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold text-primary" id="editInternModalLabel">Update Intern Details</h5>
+                <button type="button" class="close rounded-3 border bg-light" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addInternForm" enctype="multipart/form-data" method="post" asp-action="AddIntern"
+                    asp-controller="Intern">
+                    <input type="hidden" id="editInternId" name="c_InternId" />
+                    <div class="form-group mb-3">
+                        <label class="form-label fw-bold">Intern Name</label>
+                        <input type="text" class="form-control" placeholder="Enter full name" name="editInternName"
+                            id="editInternName" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label fw-bold d-block">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="editGender" value="Male">
+                            <label class="form-check-label" for="m">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="editGender" value="Female">
+                            <label class="form-check-label" for="f">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="editTopicId" class="form-label fw-bold">Topic</label>
+                        <select name="editTopicId" id="editTopicId" class="form-select">
+
+
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="editPresentationDate" class="form-label fw-bold">Date of Presentation</label>
+                        <input id="editPresentationDate" name="editPresentationDate" type="date" class="form-control" />
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input name="editIsPresented" type="checkbox" class="form-check-input" id="editIsPresented">
+                        <label class="form-check-label" for="editIsPresented">Presentation Status</label>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label class="form-label fw-bold">Current Image</label>
+                        <div class="mb-2">
+                            <img id="editImagePreview" src="" width="100" height="100" class="rounded border" />
+                        </div>
+                        <label class="form-label fw-bold">Change Topic Image</label>
+                        <input type="file" id="editImagePath" name="editImagePath" class="form-control"
+                            accept="image/*" />
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="editInternButton">Update Intern</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="detailsInternModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-secondary text-white">
+                <h5 class="modal-title">Intern Details</h5>
+                <button type="button" class="close" data-bs-dismiss="modal">
+                    <span>X</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <p><strong>Name:</strong> <span id="dName"></span></p>
+                <p><strong>Gender:</strong> <span id="dGender"></span></p>
+                <p><strong>Topic:</strong> <span id="dTopic"></span></p>
+                <p><strong>Presentation Date:</strong> <span id="dDate"></span></p>
+                <p><strong>Status:</strong> <span id="dStatus"></span></p>
+
+                <div>
+                    <strong>Image:</strong><br />
+                    <img id="dImage" src="" width="120" height="80" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#editTopicId').html($('#c_TopicId').html());
+            loadData();
+
+            function loadData() {
+                $.ajax({
+                    url: '/Intern/GetAllInterns',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+
+                        const internTable = $('#internTable tbody');
+                        internTable.empty();
+
+                        if (!data || data.length === 0) {
+                            internTable.append(`<tr>
+                            <td colspan="8" class="text-center"> 
+                            No records found
+                            </td>
+                            </tr>`);
+                            return;
+                        }
+
+                        data.forEach(function (intern) {
+
+                            let statusText = intern.c_IsPresented ? "Presented" : "Pending";
+
+                            let imageHtml = intern.ImagePath
+                                ? `<img src="/intern_images/${intern.ImagePath}" width="60" height="60" class="rounded"/>`
+                                : '';
+
+                            const row = `<tr>
+                            <td>${intern.c_InternId}</td>
+                            <td>${intern.c_InternName}</td>
+                            <td>${intern.c_Gender}</td>
+                            <td><span class="badge bg-info text-dark">${intern.c_TopicName}</span></td>
+                            <td>${intern.c_PresentationDate.split('T')[0]}</td>
+                            <td>${statusText}</td>
+                            <td>${imageHtml}</td>
+                            <td>
+                            <button class="btn btn-secondary text-white details"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailsInternModal"
+                            data-id="${intern.c_InternId}"><i class="bi bi-person-square"></i></button>
+
+                            <button class="btn btn-primary edit" data-bs-toggle="modal"
+                            data-bs-target="#editInternModal"
+                            data-id="${intern.c_InternId}"><i class="bi bi-pencil"></i></button>
+
+                            <button class="btn btn-danger delete" data-bs-toggle="modal" data-id="${intern.c_InternId}"> 
+                            <i class="bi bi-trash"></i></button>
+                            </td>
+                            </tr>`;
+
+                            internTable.append(row);
+                        });
+                    },
+                    error: function (error) {
+                        console.log("Error loading interns!", error);
+                    }
+                });
+            }
+
+
+            $('#addInternButton').on('click', function () {
+                addIntern();
+            });
+
+            function addIntern() {
+
+                var formData = new FormData();
+
+                formData.append("c_InternName", $('#c_InternName').val());
+                formData.append("c_Gender", $('input[name="c_Gender"]:checked').val());
+                formData.append("c_TopicId", $('#c_TopicId').val());
+                formData.append("c_PresentationDate", $('#c_PresentationDate').val());
+                formData.append("c_IsPresented", $('#c_IsPresented').is(':checked'));
+
+                var fileInput = $('#ImagePath')[0];
+                if (fileInput.files.length > 0) {
+                    formData.append("ImagePath", fileInput.files[0]);
+                }
+
+                $.ajax({
+                    url: '/Intern/AddIntern',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        $('#addInternModal').modal('hide');
+                        resetForm();
+                        loadData();
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Intern Added!',
+                            text: response.message,
+                            timer: 2000,
+                            showConfirmButton: false
+                        });
+                    },
+                    error: function (error) {
+                        console.log("Add Intern Error:", error);
+                    }
+                });
+            }
+
+
+            $('#internTable').on('click', '.delete', deleteIntern);
+
+            function deleteIntern() {
+
+                var internId = $(this).data('id');
+
+                if (confirm('Are you sure want to delete this record?')) {
+                    $.ajax({
+                        url: '/Intern/DeleteIntern',
+                        type: 'POST',
+                        data: { id: internId },
+                        success: function (response) {
+                            loadData();
+                            Swal.fire({
+                                icon: 'success',
+                                title: response.message,
+                                timer: 1500,
+                                showConfirmButton: false
+                            });
+                        }, error: function (error) {
+                            console.log("Delete Error", error);
+                            Swal.fire('Error', 'Something went wrong!', 'error');
+                        }
+                    });
+                }
+            }
+
+            $('#internTable').on('click', '.details', function () {
+                var internId = $(this).data('id');
+                $.ajax({
+                    url: '/Intern/GetInternById/',
+                    type: 'GET',
+                    data: { id: internId },
+                    success: function (data) {
+
+                        $("#dName").text(data.c_InternName);
+                        $("#dGender").text(data.c_Gender);
+                        $("#dTopic").text(data.c_TopicName);
+                        $("#dDate").text(data.c_PresentationDate.split('T')[0]);
+                        $("#dStatus").text(data.c_IsPresented ? "Presented" : "Not Presented");
+
+                        if (data.ImagePath)
+                            $("#dImage").attr("src", "/intern_images/" + data.ImagePath + "?t=" + new Date().getTime());
+                        else
+                            $("#dImage").attr("src", "/intern_images/default.jpg");
+
+                        $("#detailsInternModal").modal('show');
+                    }
+                });
+            });
+
+
+
+            $('#internTable').on('click', '.edit', function () {
+                var internId = $(this).data('id');
+
+                $.ajax({
+                    url: '/Intern/GetInternById',
+                    type: 'GET',
+                    data: { id: internId },
+                    success: function (data) {
+
+                        $('#editInternId').val(data.c_InternId);
+                        $('#editInternName').val(data.c_InternName);
+                        var dateVal = data.c_PresentationDate;
+                        if (dateVal) {
+                            $('#editPresentationDate').val(dateVal.split('T')[0]);
+                        }
+
+                        $('#editTopicId').val(data.c_TopicId);
+
+
+                        var isPresented = data.c_IsPresented ?? data.c_isPresented;
+                        $('#editIsPresented').prop('checked', isPresented);
+
+                        var gender = data.c_Gender;
+                        $(`input[name="editGender"][value="${gender}"]`).prop('checked', true);
+
+
+                        if (data.ImagePath || data.imagePath) {
+                            var imgName = data.ImagePath || data.imagePath;
+                            $("#editImagePreview").attr("src", "/intern_images/" + imgName + "?t=" + new Date().getTime());
+                        } else {
+                            $("#editImagePreview").attr("src", "/intern_images/default.jpg");
+                        }
+                        $('#editInternModal').modal('show');
+                    },
+                    error: function (err) {
+                        Swal.fire('Error', 'Failed to fetch details', 'error');
+                    }
+                });
+            });
+
+
+            $('#editInternButton').on('click', function () {
+                updateIntern();
+            });
+
+            function updateIntern() {
+                var formData = new FormData();
+
+                formData.append("c_InternId", $('#editInternId').val());
+                formData.append("c_InternName", $('#editInternName').val());
+                formData.append("c_Gender", $('input[name="editGender"]:checked').val());
+                formData.append("c_TopicId", $('#editTopicId').val());
+                formData.append("c_PresentationDate", $('#editPresentationDate').val());
+                formData.append("c_IsPresented", $('#editIsPresented').is(':checked'));
+
+                var fileInput = $('#editImagePath')[0];
+                if (fileInput.files.length > 0) {
+                    formData.append("ImageFile", fileInput.files[0]);
+                }
+
+                var currentImg = $('#editImagePreview').attr('src').split('/').pop().split('?')[0];
+                if (currentImg !== 'default.jpg') {
+                    formData.append("OldImagePath", currentImg);
+                }
+
+                $.ajax({
+                    url: '/Intern/UpdateIntern',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        if (response.success) {
+                            $('#editInternModal').modal('hide');
+                            loadData();
+                            Swal.fire('Updated!', response.message, 'success');
+                        } else {
+                            Swal.fire('Error', 'Helper returned failure', 'error');
+                        }
+                    },
+                    error: function (xhr) {
+                        Swal.fire('Error', 'All fields are required!', 'error');
+                    }
+                });
+            }
+
+
+
+            function resetForm() {
+
+                $('#c_InternName').val('');
+                $('input[name="c_Gender"]').prop('checked', false);
+                $('#c_TopicId').prop('selectedIndex', 0);
+                $('#c_PresentationDate').val('');
+                $('#c_IsPresented').prop('checked', false);
+                $('#ImagePath').val('');
+            }
+
+
+
+            $("#addInternForm").validate({
+                rules: {
+                    c_InternName: 
+                    { 
+                        required: true, minlength: 3 
+                    },
+                    c_Gender: 
+                    { 
+                        required: true 
+                    },
+                    c_TopicId: 
+                    { 
+                        required: true 
+                    },
+                    c_PresentationDate: 
+                    { 
+                        required: true 
+                    },
+                    ImagePath: 
+                    { 
+                        required: true 
+                    }
+                },
+                messages: {
+                    c_InternName: "Please enter the intern's name",
+                    c_Gender: "Please select a gender",
+                    c_TopicId: "Please select a topic",
+                    c_PresentationDate: "Please select a date",
+                    ImagePath: "Please upload an image"
+                },
+                errorClass: "text-danger small",
+                submitHandler: function (form) {
+                    addIntern();
+                }
+            });
+
+
+            $('#addInternButton').on('click', function () {
+                $("#addInternForm").submit();
+            });
+
+        });
+
+
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

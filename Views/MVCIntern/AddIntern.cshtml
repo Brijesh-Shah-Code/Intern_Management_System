@@ -1,0 +1,162 @@
+﻿@* @model InternApp.Models.t_Intern
+
+<div class="card shadow-sm mx-auto" style="max-width: 600px;">
+    <div class="card-header text-white" style="background-color: rgb(45, 172, 149);">
+        <h5 class="mb-0 fw-bold">Add New Intern</h5>
+    </div>
+
+    <div class="card-body" style="background-color: aliceblue;">
+        <form asp-action="AddIntern" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label asp-for="c_InternName" class="form-label fw-bold">Intern Name</label>
+                <input asp-for="c_InternName" type="text" class="form-control" placeholder="Enter full name" />
+
+                <span asp-validation-for="c_InternName" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold d-block">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input asp-for="c_Gender" class="form-check-input" type="radio" value="M">
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="c_Gender" class="form-check-input" type="radio" value="F">
+                    <label class="form-check-label">Female</label>
+                </div>
+                <span asp-validation-for="c_Gender" class="text-danger small"></span>
+
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="c_TopicId" class="form-label fw-bold">Topic</label>
+                <select asp-for="c_TopicId" class="form-select">
+                    <option value="">-- Select Topic --</option>
+                    @foreach (var topic in ViewBag.Topics)
+                    {
+                        <option value="@topic.c_TopicId">
+                            @topic.c_TopicName
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="c_TopicId" class="text-danger small"></span>
+
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="c_PresentationDate" class="form-label fw-bold">Date of Presentation</label>
+                <input asp-for="c_PresentationDate" type="date" class="form-control" />
+                <span asp-validation-for="c_PresentationDate" class="text-danger small"></span>
+
+            </div>
+
+            <div class="form-check mb-3">
+                <input asp-for="c_IsPresented" type="checkbox" class="form-check-input" id="c_IsPresented">
+                <label class="form-check-label" asp-for="c_IsPresented">Presentation Status</label>
+                <span asp-validation-for="c_IsPresented" class="text-danger small"></span>
+
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="ImagePath" class="form-label fw-bold">Upload Topic Image</label>
+                <input type="file" asp-for="ImageFile" name="imagePath" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="reset" class="btn btn-secondary me-md-2" id="resetForm">Clear</button>
+                <button type="submit" class="btn btn-primary px-4">Add Intern</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} *@
+
+
+
+@model InternApp.Models.t_Intern
+
+<div class="card shadow-sm mx-auto" style="max-width: 600px;">
+    <div class="card-header text-white" style="background-color: @(Model?.c_InternId > 0 ? "#ffc107" : "#2dac95");">
+        <h5 class="mb-0 fw-bold">@(Model?.c_InternId > 0 ? "Update Intern" : "Add New Intern")</h5>
+    </div>
+
+    <div class="card-body">
+        <form asp-action="@(Model?.c_InternId > 0 ? "UpdateInternData" : "AddIntern")" method="post" enctype="multipart/form-data">
+            
+            <input type="hidden" asp-for="c_InternId" />
+            <input type="hidden" name="ExistingImagePath" value="@Model?.ImagePath" />
+
+            <div class="mb-3">
+                <label asp-for="c_InternName" class="form-label fw-bold">Intern Name</label>
+                <input asp-for="c_InternName" class="form-control" />
+                <span asp-validation-for="c_InternName" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold d-block">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input asp-for="c_Gender" class="form-check-input" type="radio" value="M">
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="c_Gender" class="form-check-input" type="radio" value="F">
+                    <label class="form-check-label">Female</label>
+                </div>
+                 <span asp-validation-for="c_Gender" class="text-danger small d-block"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="c_TopicId" class="form-label fw-bold">Topic</label>
+                <select asp-for="c_TopicId" class="form-select">
+                    <option value="">-- Select Topic --</option>
+                    @foreach (var topic in ViewBag.Topics)
+                    {
+                        <option value="@topic.c_TopicId">@topic.c_TopicName</option>
+                    }
+                </select>
+                 <span asp-validation-for="c_TopicId" class="text-danger small"></span>
+
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="c_PresentationDate" class="form-label fw-bold"></label>
+                <input asp-for="c_PresentationDate" type="date" class="form-control" 
+                       value="@(Model?.c_PresentationDate?.ToString("yyyy-MM-dd"))" />
+                          <span asp-validation-for="c_PresentationDate" class="text-danger small"></span>
+            </div>
+
+            <div class="form-check mb-3">
+                <input asp-for="c_IsPresented" type="checkbox" class="form-check-input">
+                <label class="form-check-label" asp-for="c_IsPresented">Presentation Status</label>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-bold">Topic Image</label>
+                @if (!string.IsNullOrEmpty(Model?.ImagePath))
+                {
+                    <div class="mb-2">
+                        <img src="~/intern_images/@Model.ImagePath" style="width: 80px; border-radius: 5px;" />
+                        <small class="text-muted d-block">Current Image</small>
+                    </div>
+                }
+                <input type="file" name="imagePath" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a asp-action="GetAllInterns" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn @(Model?.c_InternId > 0 ? "btn-warning" : "btn-primary")">
+                    @(Model?.c_InternId > 0 ? "Update Intern" : "Add Intern")
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

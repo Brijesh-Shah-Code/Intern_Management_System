@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "_Layout";
+}
+
+<table class="table table-bordered table-striped mt-4">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Topic</th>
+            <th>Presentation Date</th>
+            <th>Status</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.internData)
+        {
+        <tr>
+            <td>@item.c_InternId</td>
+            <td>@item.c_InternName</td>
+            <td>@item.c_Gender</td>
+            <td><span class="badge bg-info text-dark">@item.c_TopicName</span></td>
+            <td>@item.c_PresentationDate.ToString("dd-MM-yyyy")</td>
+            <td>
+                @* @(item.c_IsPresented ? "Presented" : "Pending") *@
+
+                  @if (item.c_IsPresented)
+                    {
+                        <span class="badge bg-success">Presented</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Pending</span>
+                    }
+            </td>
+            <td>
+                @if (!string.IsNullOrEmpty(item.ImagePath))
+                {
+                    <img src="/intern_images/@item.ImagePath" width="60" height="60" class="rounded" />
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
