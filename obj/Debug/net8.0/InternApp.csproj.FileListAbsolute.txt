@@ -34,3 +34,4 @@ D:\CP_TR110\MVCAPP\InternApp\obj\Debug\net8.0\refint\InternApp.dll
 D:\CP_TR110\MVCAPP\InternApp\obj\Debug\net8.0\InternApp.pdb
 D:\CP_TR110\MVCAPP\InternApp\obj\Debug\net8.0\InternApp.genruntimeconfig.cache
 D:\CP_TR110\MVCAPP\InternApp\obj\Debug\net8.0\ref\InternApp.dll
+D:\CP_TR110\MVCAPP\InternApp\obj\Debug\net8.0\InternApp.sourcelink.json

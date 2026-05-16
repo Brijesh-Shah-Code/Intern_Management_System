@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8qGx81M6BbKz32zN/FIHJrOL6vlF2Jg9FvM+gPqviDQ=",
+  "Hash": "W0m0CL3e4xUNwQFnlbEJRnTyK6vhtoi7VlO6C2SZzA4=",
   "Source": "InternApp",
   "BasePath": "_content/InternApp",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\intern_images\\13030899-ab76-49c3-ad9b-0269f18da3ba_Anniversary.png"
+    },
+    {
+      "Identity": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\15966498-dc8c-415e-a7fd-60360be9799b.jpg",
+      "SourceId": "InternApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\",
+      "BasePath": "_content/InternApp",
+      "RelativePath": "intern_images/15966498-dc8c-415e-a7fd-60360be9799b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\intern_images\\15966498-dc8c-415e-a7fd-60360be9799b.jpg"
     },
     {
       "Identity": "D:\\CP_TR110\\MVCAPP\\InternApp\\wwwroot\\intern_images\\1dd3409b-0ff6-46ba-aa15-6bf213ea289f.jpg",
